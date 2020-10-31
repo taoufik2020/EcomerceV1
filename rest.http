@@ -1,0 +1,13 @@
+GET http://localhost:5000/api/coures
+
+##################################################
+
+POST http://localhost:5000/api/coures
+Content-Type: application/json
+
+{
+    "titre": "angujs"
+}
+######
+DELETE http://localhost:5000/api/coures/2
+
