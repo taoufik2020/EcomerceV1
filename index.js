@@ -66,7 +66,6 @@ Coure.find()
 //console.log("mongocoure", c);
 
 app.use(express.json())
-
 app.use(logged.middll)
 app.use(express.static('public'))
 app.use((req,res,next)=> {
@@ -81,6 +80,7 @@ app.use('',home)
 
 
 // connection with database 
+
 mongoose.connect('mongodb://localhost/test')
 .then(()=> console.log('connection avec succe'))
 .catch(() => console.log('problem with connection'))
@@ -106,6 +106,7 @@ const users = new mongoose.Schema({
      }
 
 })
+
 const role = mongoose.model('Role',users)
 
  
