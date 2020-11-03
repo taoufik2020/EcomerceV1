@@ -63,7 +63,7 @@ router.delete('/:id',(req,res)=>{
 
 
  })
-
+ 
  function validCoure(params) {
     const schema = joi.object({
         titre: joi.string().alphanum().min(3).max(12).required()
@@ -72,5 +72,7 @@ router.delete('/:id',(req,res)=>{
      
  }
  
-
+ 
  module.exports = router ;
+
+ //gitvscode
